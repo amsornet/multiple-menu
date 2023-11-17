@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-all {
+  background: #7075F4;;
+  padding: 0 13.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-all > p {
+  color: #FFF;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.027rem;
+  text-transform: uppercase;
+}
+
+.nav-all .glass {
+  font-size: 2.3rem;
+  color: #FFFFFF;
+}
+
+.nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu_link {
+
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu_link-center {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .2rem;
+
+
+}
+.menu_li {
+  position: relative;
+  padding: 3rem 2rem;
+
+  transition: background 0.3s linear;
+
+}
+
+.submenu {
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  gap: 6.8rem;
+
+  text-transform: capitalize;
+
+
+  top: 12.4rem;
+  left: -16.2rem;
+
+  background: #fff;
+  min-width: 51.2rem;
+
+  border-radius: 0 0 5rem 5rem;
+  box-shadow: 0 .1rem 1.1rem 0 rgba(0, 0, 0, 0.10);
+  padding: 1.7rem 3.2rem;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  transform-origin: 0 0;
+  transform: rotateX(-90deg);
+
+  transition-property: visibility, opacity, transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+
+.submenu_uls {
+  display: flex;
+  flex-direction: column;
+  min-width: fit-content;
+
+}
+
+
+.submenu_links {
+
+
+
+  color: #000;
+  z-index: 999;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.021rem;
+  text-align: start;
+  text-decoration: none;
+  border-bottom: .1rem solid #D9D9D9;
+  padding-bottom: .1rem;
+}
+
+
+.submenu_li {
+  text-align: start;
+  list-style-type: none;
+  padding-top: 0.8rem;
+}
+
+
+.submenu_link {
+  color: #6F6F6F;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.021rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav .menu_li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+
